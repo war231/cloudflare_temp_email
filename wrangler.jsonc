@@ -6,9 +6,17 @@
     "enabled": true
   },
   "assets": {
-    "directory": "frontend"
+    "directory": "pages"
   },
   "compatibility_flags": [
     "nodejs_compat"
+
+  // --- 在这里添加下面这一段 ---
+  "d1_databases": [
+    {
+      "binding": "DB",             // 必须叫 DB，和你的代码里对应
+      "database_name": "temp_email_db", // 你的数据库名字
+      "database_id": "352aa23f-fe3f-4fa3-93c6-533a7f906818" // 重点在这里！
+    }
   ]
 }
